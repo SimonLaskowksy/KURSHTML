@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie_Staz</title>
+    <link rel="stylesheet" href="style.css">
+    <style>                                 /*menu navbar*/
+        ol {
+          list-style-type:none;
+          padding:0;
+          margin:0;
+          background-color:#FFF;
+          font-size:18px;
+          height:2em;
+          line-height:2em;
+          text-align:center;
+        }
+        ol a {
+          display:block;
+          text-decoration:none;
+          color:#000;
+          padding:0 5px;
+        }
+        ol > li {
+          float:left;
+          width:200px;
+          background-color:rgb(235, 231, 231);
+          height:2em;
+        }
+        ol > li:first-child {
+          margin-left:0;
+        }
+        ol > li:hover {
+          background-color:rgb(54, 116, 250);
+        }
+        ol > li:hover > a {
+          color:rgb(253, 253, 253);
+        }
+        ol > li:hover > ul {
+          display:block;
+        }
+        ol > li > ul {
+          display:none;
+          list-style-type:none;
+          padding:0;
+          margin:0;
+        }
+        ol > li > ul > li {
+          position:relative;
+          background-color:rgb(255, 255, 255);
+        }
+        ol > li > ul > li > a {
+          border-top:1px solid #FFF;
+        }
+        ol > li > ul > li:hover {
+          background-color:#DDD;
+        }
+        ol > li > ul > li:hover > a {
+          color:#09C;
+        }
+    </style>
+</head>
+<body>
+    <div class="CONT1">
+        <div class="sekcja1">
+            <div class="logo"></div>
+            <div class="szukajka">
+                <div class="tekst_szukaj">szukaj</div>
+                <div class="linia_szukaj"></div>
+                <div class="zdjecie_lupa_szukaj"></div>
+            </div>
+            <div class="jezyki">
+                <div class="PL">PL</div>
+                <div class="EN">EN</div>
+            </div>
+        </div>
+        <div class="sekcja2">
+            <div class="menu">
+                <!-- <div class="strona_glowna">STRONA GŁOWNA</div>
+                <div class="o_nas">O NAS</div>
+                <div class="oferta">OFERTA</div>
+                <div class="galeria">GALERIA</div>
+                <div class="kontakt">KONTAKT</div> -->
+                <ol>
+                    <li><a href="#">STRONA GLOWNA</a>
+                      <ul>
+                        <li><a href="#">CZAPKI</a></li>
+                        <li><a href="#">KOSZULKI</a></li>
+                        <li><a href="#">SPODNIE</a></li>
+                        <li><a href="#">BUTY</a></li>
+                        <li><a href="#">ZEGARKI</a></li>
+                      </ul>
+                    </li>
+              
+                    <li><a href="#">O NAS</a>
+                      <ul>
+                        <li><a href="#">CZAPKI</a></li>
+                        <li><a href="#">KOSZULKI</a></li>
+                        <li><a href="#">SPODNIE</a></li>
+                        <li><a href="#">BUTY</a></li>
+                        <li><a href="#">ZEGARKI</a></li>
+                      </ul>
+                    </li>
+              
+                    <li><a href="#">OFERTA</a>
+                        <ul>
+                            <li><a href="#">CZAPKI</a></li>
+                            <li><a href="#">KOSZULKI</a></li>
+                            <li><a href="#">SPODNIE</a></li>
+                            <li><a href="#">BUTY</a></li>
+                            <li><a href="#">ZEGARKI</a></li>
+                          </ul>
+                    </li>
+              
+                    <li><a href="#">GALERIA</a>
+                      <ul>
+                        <li><a href="#">CZAPKI</a></li>
+                        <li><a href="#">KOSZULKI</a></li>
+                        <li><a href="#">SPODNIE</a></li>
+                        <li><a href="#">BUTY</a></li>
+                        <li><a href="#">ZEGARKI</a></li>
+                      </ul>
+                    </li>
+
+                    <li><a href="#">KONTAKT</a>
+                        <ul>
+                            <li><a href="#">CZAPKI</a></li>
+                            <li><a href="#">KOSZULKI</a></li>
+                            <li><a href="#">SPODNIE</a></li>
+                            <li><a href="#">BUTY</a></li>
+                            <li><a href="#">ZEGARKI</a></li>
+                        </ul>
+                      </li>
+                  </ol>
+            </div>
+        </div>
+        <div class="sekcja3">
+            <div class="zdjecia middle>
+                <input type="radio" name="r" id="r0">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2" >
+                <input type="radio" name="r" id="r3">
+                <div class="slajdy s1">
+                    <div class="slajd ">
+                        <img src="img/slider1.jpg" alt="jesteś?">
+                    </div>
+                    <div class="slajd ">
+                        <img src="img/slider2.jpg" alt="jesteś?">
+                    </div>
+                    <div class="slajd ">
+                        <img src="img/slider3.jpg" alt="jesteś?">
+                    </div>
+                </div>
+                <div class="nawigacja">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <div class="CONT2">
+        <div class="sekcja4">
+            <div class="napis_oferta">OFERTA</div>
+        </div>
+        <div class="sekcja5">
+            <div class="czapki">
+                <div class="zdjecie"></div>
+                <div class="tytul">CZAPKI</div>
+                <div class="tekst">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit veniam enim magnam rerum similique ipsum sequi blanditiis deleniti dicta consequatur ratione illum, sunt molestiae ad obcaecati?
+                </div>
+            </div>
+            <div class="koszulki">
+                <div class="zdjecie"></div>
+                <div class="tytul">KOSZULKI</div>
+                <div class="tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rerum, similique asperiores amet sunt quisquam quasi quo. Voluptatem ipsum eligendi repellat, neque ut repudiandae?</div>
+            </div>
+            <div class="spodnie">
+                <div class="zdjecie"></div>
+                <div class="tytul">SPODNIE</div>
+                <div class="tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aliquam unde eligendi accusamus eveniet consequuntur sed voluptatum? Autem, possimus fugit! </div>
+            </div>
+            <div class="buty">
+                <div class="zdjecie"></div>
+                <div class="tytul">BUTY</div>
+                <div class="tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, sequi inventore deleniti, qui necessitatibus odio omnis nam nulla aliquid architecto voluptate, quaerat molestias possimus? Sunt corporis quasi qui temporibus atque?</div>
+            </div>
+            <div class="zegarki">
+                <div class="zdjecie"></div>
+                <div class="tytul">ZEGARKI</div>
+                <div class="tekst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi temporibus alias dignissimos tenetur accusantium autem, non officiis molestias, dolor vitae dolorum.</div>
+            </div>
+        </div>
+        <div class="sekcja6">
+            <div class="kalendarz">
+                <div class="tytul_kalendarz">KALENDARZ</div>
+                <div class="ikona_kalendarz"></div>
+                <div class="wpis_kalendarz_1">
+                  <div class="tytul_wpis_kalendarz_1">24 June 2014 <a href="#">2EN Events</a> </div>
+                  <div class="tekst_wpis_kalendarz_1">This is excerpt. You will see content as you enter the entry.</div>
+                </div>
+                <div class="wpis_kalendarz_2">
+                  <div class="tytul_wpis_kalendarz_2">24 June 2014 <a href="#">Meeting in Warsaw</a> </div>
+                  <div class="tekst_wpis_kalendarz_2">There are meeting in Warsaw at 24 June 2014.</div>
+                </div>
+                <div class="show_more_kalendarz"></div>
+            </div>
+
+            <div class="blog">
+                <div class="tytul_blog">BLOG</div>
+                <div class="ikona_blog"></div>
+                <div class="wpis_blog_1">
+                  <div class="tytul_wpis_blog_1"><a href="#">2EN Industry news</a> <br> 24 June 2014</div>
+                  <div class="tekst_wpis_blog_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nihil dolores magnam voluptate ipsa.</div>
+                </div>
+                <div class="wpis_blog_2">
+                  <div class="tytul_wpis_blog_2"><a href="#">1EN Industry news</a> <br> 24 June 2014</div>
+                  <div class="tekst_wpis_blog_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, nihil dolores magnam voluptate ipsa.</div>
+                </div>
+                <div class="show_more_blog"></div>
+            </div>
+
+            <div class="karta">
+                <div class="tytul_karta">
+                  <div class="tekst_tytul_karta">
+                    FOUNDING MEMBERS
+                  </div>
+                </div>
+                <div class="tlo_karta">
+                  <div class="zdjecie_karta"></div>
+                  <div class="linia_karta"></div>
+                  <div class="tekst_karta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, ut sed commodi sunt eligendi aspernatur quasi quod voluptas unde molestiae eos nisi voluptatibus! Natus quod rerum quidem ipsa aspernatur nulla.</div>
+                </div>
+                <div class="member">  
+                  <div class="become_a_member">BECOME A MEMBER</div>
+                  <div class="strzalka_become_a_member"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="CONT3">
+        <div class="sekcja7">
+            <div class="partners">PARTNERS</div>
+            <div class="strzalki_partners"></div>
+            <!-- zastosowałem funkcje w ktorej nie byly potrzebne -->
+            <div class="karuzela">
+              <div class="slide_track">
+
+                <div class="slide">
+                  <img src="img/logo_ibm.jpg" height="100" width="250" alt=""/>
+                </div>
+
+                <div class="slide">
+                  <img src="img/logo_siemens.jpg" height="100" width="250" alt=""/>
+                </div>
+                <div class="slide">
+                  <img src="img/logo_ibm.jpg" height="100" width="250" alt=""/>
+                </div>
+
+                <div class="slide">
+                  <img src="img/logo_siemens.jpg" height="100" width="250" alt=""/>
+                </div>
+                <div class="slide">
+                  <img src="img/logo_ibm.jpg" height="100" width="250" alt=""/>
+                </div>
+
+                <div class="slide">
+                  <img src="img/logo_siemens.jpg" height="100" width="250" alt=""/>
+                </div>
+                <div class="slide">
+                  <img src="img/logo_ibm.jpg" height="100" width="250" alt=""/>
+                </div>
+
+                <div class="slide">
+                  <img src="img/logo_siemens.jpg" height="100" width="250" alt=""/>
+                </div>
+                <div class="slide">
+                  <img src="img/logo_ibm.jpg" height="100" width="250" alt=""/>
+                </div>
+
+                <div class="slide">
+                  <img src="img/logo_siemens.jpg" height="100" width="250" alt=""/>
+                </div>
+                <div class="slide">
+                  <img src="img/logo_ibm.jpg" height="100" width="250" alt=""/>
+                </div>
+
+                <div class="slide">
+                  <img src="img/logo_siemens.jpg" height="100" width="250" alt=""/>
+                </div>
+                <div class="slide">
+                  <img src="img/logo_ibm.jpg" height="100" width="250" alt=""/>
+                </div>
+
+                <div class="slide">
+                  <img src="img/logo_siemens.jpg" height="100" width="250" alt=""/>
+                </div>
+
+              </div>
+            </div>
+            <div class="do_gory">
+              <div class="strzalka"></div>
+              <div class="go_top">GO TOP</div>
+            </div>
+        </div>
+    </div>
+    <div class="CONT4">
+        <div class="sekcja8">
+            <div class="tekst_koncowy">
+              © CLEANTECH CLUSTER SOUTH POLAND, ALL RIGHTS RESERVED. <br> CREATED BY WEBLIDER.EU 
+              <br> <br> <br>
+              THIS WEBSITE USES COOKIES FILES. YOU CAN CHANGE COOKIES SETTINGS AT YOUR BROWSER. READ MORE ABOUT COOKIES POLICY.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

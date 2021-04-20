@@ -1,0 +1,516 @@
+@mixin white-gradient {
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+$animationSpeed: 40s;
+
+@keyframes scroll {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(calc(-250px * 7))}
+}
+
+body{
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    .CONT1{
+        background-image:linear-gradient(rgb(230, 230, 230), rgb(236, 236, 236));
+        padding-left: 30vh;
+        padding-right: 30vh;
+        padding-top: 2vh;
+        .sekcja1{
+            display: flex;
+            height: 10vh;
+            //border: 1px solid black;
+            .logo{
+                left:0;
+                width: 9%;
+                height: 80%;
+                background-image: url(img/logo_glowne.png);
+                background-size: cover;
+                background-position: center;
+            }
+            .szukajka{
+                position: absolute;
+                //border: 1px solid black;
+                width: 30vh;
+                //height: 5vh;
+                right: 40vh;
+                top: 3vh;
+                display: flex;
+                color: rgb(173, 173, 173);
+                .tekst_szukaj{
+                   // border: 1px solid black ;
+                    height: 20px;
+                }
+                .linia_szukaj{
+                    border-bottom: 1px solid rgb(209, 208, 208);
+                    width: 60%;
+                    height: 1px;
+                    position: absolute;
+                    top:2vh;
+                }
+                .zdjecie_lupa_szukaj{
+                   // border: 1px solid black;
+                    position: absolute;
+                    background-image: url(img/szukaj.png);
+                    height: 30px;
+                    width: 30px;
+                    background-size: cover;
+                    background-position: center;
+                    right: 8vh;
+                    top:-1vh;
+                }
+            }
+            .jezyki{
+                position: absolute;
+                display: flex;
+                right: 30vh;
+                .PL{
+                    width: 35px;
+                    height: 35px;
+                    background-color: rgb(212, 211, 211);
+                    color: rgb(163, 163, 163);
+                    text-align:center;
+                    line-height:2em;
+                }
+                .EN{
+                    width: 35px;
+                    height: 35px;
+                    color: rgb(231, 231, 231);
+                    background-color: rgb(148, 148, 148);
+                    text-align:center;
+                    line-height:2em;
+                }
+            }
+        }
+        .sekcja2{
+            .menu{
+                display: flex;
+            }
+        }
+        .sekcja3{
+            //border-bottom: 1px solid black;
+            .zdjecia{
+                width: 100%;
+                height: 350px;
+                overflow: hidden;
+                .slajdy{
+                    width: 500%;
+                    height: 100%;
+                    display: flex;
+                    .slajd{
+                        width: 20%;
+                        transition: 0.4s;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .middle{
+                position: absolute;
+                transform: translate(-50%, -50%);
+            }
+            .nawigacja{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                .bar{
+                    background-size: cover;
+                    background-position: center;
+                    background-image: url(img/slider_inactive.png);
+                    width: 15px;
+                    height: 15px;
+                    // border: 1px solid rgb(0, 0, 0);
+                    margin: 10px;
+                    cursor: pointer;
+                    transition: 0.4s;
+                }
+                .bar:hover{
+                    background-image: url(img/slider_active.png);
+                }
+                .bar:active{
+                    background-image: url(img/slider_active.png);
+                }
+            }
+        }
+    }
+    .CONT2{
+        border-top: 1px solid black;
+        background-color: rgb(237, 240, 241);
+        padding-left: 30vh;
+        padding-right: 30vh;
+        padding-top: 3vh;
+        .sekcja4{
+            //dodac tu pozniej jakies ozdoby do napisu tekst
+            margin-bottom: 2vh;
+            font-weight: bold;
+        }
+        .sekcja5{
+            display: flex;
+            .czapki{
+                //border: 1px solid black;
+                width: 16%;
+                height: 350px;
+                .zdjecie{
+                    width:100%;
+                    height: 40%;
+                    background-image: url(img/oferta1.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .tytul{
+                    font-weight: bold;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                    justify-content: center;
+                    text-align: center;
+                }
+                .tekst{
+                    width: 100%;
+                }
+            }
+            .koszulki{
+                margin-left: 5%;
+                //border: 1px solid black;
+                width: 16%;
+                height: 350px;
+                .zdjecie{
+                    width:100%;
+                    height: 40%;
+                    background-image: url(img/oferta2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .tytul{
+                    font-weight: bold;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                    justify-content: center;
+                    text-align: center;
+                }
+                .tekst{
+                    width: 100%;
+                }
+            }
+                
+            .spodnie{
+                margin-left: 5%;
+                //border: 1px solid black;
+                width: 16%;
+                height: 350px;
+                .zdjecie{
+                    width:100%;
+                    height: 40%;
+                    background-image: url(img/oferta3.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .tytul{
+                    font-weight: bold;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                    justify-content: center;
+                    text-align: center;
+                }
+                .tekst{
+                    width: 100%;
+                }
+            }
+            .buty{
+                margin-left: 5%;
+                //border: 1px solid black;
+                width: 16%;
+                height: 350px;
+                .zdjecie{
+                    width:100%;
+                    height: 40%;
+                    background-image: url(img/oferta4.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .tytul{
+                    font-weight: bold;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                    justify-content: center;
+                    text-align: center;
+                }
+                .tekst{
+                    width: 100%;
+                }
+            }
+            .zegarki{
+                margin-left: 5%;
+                //border: 1px solid black;
+                width: 16%;
+                height: 350px;
+                .zdjecie{
+                    width:100%;
+                    height: 40%;
+                    background-image: url(img/oferta5.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .tytul{
+                    font-weight: bold;
+                    margin-top: 5%;
+                    margin-bottom: 5%;
+                    justify-content: center;
+                    text-align: center;
+                }
+                .tekst{
+                    width: 100%;
+                }
+            }
+        }
+        .sekcja6{
+            height: 50vh;
+            margin-top:4vh;
+            display: flex;
+            //height: 350px;
+            .kalendarz{
+                margin-left: 3%;
+                width: 30%;
+                .tytul_kalendarz{
+                    font-weight: bold;
+                }
+                .ikona_kalendarz{
+                    margin-top: 3vh;
+                    width: 50px;
+                    height: 50px;
+                    background-image: url(img/kalendarz.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .wpis_kalendarz_1{
+                    margin-top: 2vh;
+                    .tytul_wpis_kalendarz_1{
+                        font-weight: bold;
+                        a{
+                            margin-left: 30px;
+                            color:grey;
+                            font-weight: normal;
+                        }
+                    }
+                }
+                .wpis_kalendarz_2{
+                    margin-top: 2vh;
+                    .tytul_wpis_kalendarz_2{
+                        font-weight: bold;
+                        a{
+                            margin-left: 30px;
+                            color: gray;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+            .blog{
+                margin-left: 3%;
+                width: 35%;
+                .tytul_blog{
+                    font-weight: bold;
+                }
+                .ikona_blog{
+                    margin-top: 3vh;
+                    width: 50px;
+                    height: 50px;
+                    background-image: url(img/blog.png);
+                    background-size: cover;
+                    background-position: center;
+                }
+                .wpis_blog_1{
+                    margin-top: 2vh;
+                    .tytul_wpis_blog_1{
+                        font-weight: bold;
+                        a{
+                            color:grey;
+                            font-weight: normal;
+                        }
+                    }
+                }
+                .wpis_blog_2{
+                    margin-top: 2vh;
+                    .tytul_wpis_blog_2{
+                        font-weight: bold;
+                        a{
+                            color: gray;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+            .karta{
+                margin-left: 3%;
+                width: 26%;
+                height: 80%;
+                .tytul_karta{
+                    border:1px solid lightgray;
+                    border-bottom: 0px;
+                    width: 100%;
+                    height: 15%;
+                    background-color: rgb(54, 116, 250);
+                    font-weight: bold;
+                    color: white;
+                    .tekst_tytul_karta{
+                        margin-left: 6%;
+                        padding-top: 6%;
+                    }
+                }
+                .tlo_karta{
+                    border: 1px solid lightgray;
+                    border-top: 0px;
+                    padding-top: 10%;
+                    width: 100%;
+                    height: 80%;
+                    background-color: white;
+                    .zdjecie_karta{
+                        //position: absolute;
+                        background-image: url(img/logo_irm.jpg);
+                        width: 35%;
+                        height: 35%;
+                        background-size: cover;
+                        background-position: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .linia_karta{
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 85%;
+                        height: 6%;
+                        border-bottom: 1px solid lightgray;
+                    }
+                    .tekst_karta{
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 85%;
+                        margin-top: 6%;
+                    }
+                }
+                .member{
+                    width: 70%;
+                    height: 20%;
+                    display: flex;
+                    .become_a_member{
+                        margin-left: 10%;
+                        font-weight: bold;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                    }
+                    .strzalka_become_a_member{
+                        width: 15%;
+                        height: 45%;
+                        background-image: url(img/strzalka_prawa.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-left: 5%;
+                    }
+                }
+            }
+        }
+    }
+    .CONT3{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        background-color: white;
+        height: 25vh;
+        .sekcja7{
+            padding-left: 30vh;
+            padding-right: 30vh;
+            .partners{
+                font-weight: bold;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+            .karuzela{
+                background: white;
+                height: 100px;
+                margin: auto;
+                overflow: hidden;
+                position: relative;
+                // &::before,
+                // &::after{
+                //     @include white-gradient;
+                //     content: "";
+                //     position: absolute;
+                //     width: 200px;
+                //     z-index: 2;
+                // }
+                // &::after{
+                //     right: 0;
+                //     top: 0;
+                //     transform: rotateZ(180deg);
+                // }
+                // &::before{
+                //     left: 0;
+                //     top: 0;
+                // }
+                .slide_track{
+                    
+                    animation: scroll $animationSpeed linear infinite;
+                    display: flex;
+                    width: calc(250px * 14);
+                    .slide{
+                        height: 100px;
+                        width: 250px;
+                    }
+                }
+            }
+            .do_gory{
+                display: flex;
+                bottom:-73.8vh;
+                right: 10px;
+                position: absolute;
+                border: 1px solid black;
+                background-color: black;
+                color: white;
+                width: 100px;
+                height: 40px;
+                justify-content: center;
+                .strzalka{
+                    background-image: url(img/strzalka_gora.png);
+                    background-size: cover;
+                    background-position: center;
+                    width: 10px;
+                    height: 20px;
+                    margin-top: 10px;
+                }
+                .go_top{
+                    margin-top: 10px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .CONT4{
+        background-color: rgb(237, 240, 241);
+        height: 20vh;
+        padding-left: 30vh;
+        padding-right: 30vh;
+        .sekcja8{
+            padding-top: 4vh;
+        }
+    }
+    
+}
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+#r1:checked ~ .s1{
+    margin-left: 0%;
+}
+#r2:checked ~ .s1{
+    margin-left: -100%;
+}
+#r3:checked ~ .s1{
+    margin-left: -200%;
+}
+
+
+
